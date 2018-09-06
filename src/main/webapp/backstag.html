@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蓝桥云课堂</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link href="bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/backtages.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="layui/css/layui.css" type="text/css">
+    <!--删除课程css-->
+    <link rel="stylesheet" href="css/delCourse.css" type="text/css">
+    <link rel="stylesheet" href="css/delPeriod.css" type="text/css"/>
+    <script src="layui/layui.js" type="application/javascript"></script>
+    <script src="js/jquery-3.3.1.js" type="application/javascript"></script>
+    <script src="bootstrap-3.3.7/js/bootstrap.js" type="application/javascript"></script>
+    <script src="js/backtages.js" type="application/javascript"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+      <div class="container-fluid" style="background-color: rgba(18,21,44,0.8);height: 80px">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="register.html"><img src="images/logo1.png" width="200px" height="50px"></a>
+          </div>
+          <div class="test1">蓝桥云课堂后台管理系统</div>
+      </div>
+  </nav>
+  <div class="zhong">
+      <ul id="daoh">
+          <li id="kind1"><a href="#">&nbsp;&nbsp;&nbsp;后台管理</a></li>
+          <li>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+          <li id="kind2"><a href="#">————</a></li>
+          <li>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+          <li id="kind3"><a href="#">————</a></li>
+      </ul>
+  </div>
+  <div class="zhong-left">
+      <div style="width: 140px;text-align: center">
+          <ul class="nav nav-pills nav-stacked">
+              <li class="active"><a href="#">用户管理</a></li>
+              <li class="no1 no"><a href="#">删除用户</a></li>
+              <li class="active"><a href="#">课程管理</a></li>
+              <li class="no2 no"><a href="#">添加课程</a></li>
+              <li class="no2 no"><a href="#">删除课程</a></li>
+              <li class="no2 no"><a href="#">添加课时</a></li>
+              <li class="no2 no"><a href="#">删除课时</a></li>
+              <li class="active"><a href="#">统计分析</a></li>
+              <li class="no3 no"><a href="#">用户喜好</a></li>
+              <li class="no3 no"><a href="#">订单分析</a></li>
+              <li class="active"><a href="#">订单管理</a></li>
+              <li class="no4 no"><a href="#">查看订单</a></li>
+          </ul>
+      </div>
+
+  </div>
+  <div id="bodydetails">
+      <div id="details1" class="bodydetails" style="background-color: white"></div><!--删除用户  孙瑞-->
+      <div id="details2" class="bodydetails" style="background-color: black"></div><!--添加课程  李健/曹-->
+      <div id="details3" class="bodydetails" style="background-color: pink">
+          <div class="courseInfo">
+              <ul>
+                  <li class="info1 info2">课程编号</li>
+                  <li class="info2">课程名</li>
+                  <li class="info2">课程价格</li>
+                  <li class="info2">授课机构</li>
+                  <li class="info2">课程类别</li>
+                  <li class="info2">上架时间</li>
+                  <li class="info2">评分</li>
+                  <li class="info3">浏览量</li>
+              </ul>
+          </div>
+      </div><!--删除课程  李健-->
+      <div id="details4" class="bodydetails" style="background-color: bisque"></div><!--添加课时  李健/曹-->
+      <div id="details5" class="bodydetails" style="background-color: brown">
+          <span class="inputHead">输入要查询的课程id：</span>
+          <input type="text" name="courseName" class="inputTxt">
+          <input type="button" name="searchBtn" value="查询">
+          <div class="courseInfo">
+              <ul>
+                  <li class="info1 info2">课时编号</li>
+                  <li class="info2">课时名</li>
+                  <li class="info2">视频地址</li>
+                  <li class="info2">课程编号</li>
+              </ul>
+          </div>
+          <div class="courseInfo course">
+              <ul>
+                  <li class="info1 info2">课时编号</li>
+                  <li class="info2">课时名</li>
+                  <li class="info2">视频地址</li>
+                  <li class="info3">课程编号</li>
+              </ul>
+              <div class="deBtnP"></div>
+          </div>
+      </div><!--删除课时  李健-->
+      <div id="details6" class="bodydetails" style="background-color: gold"></div><!--统计分析  郭-->
+      <div id="details7" class="bodydetails" style="background-color: green"></div><!--订单分析  郭-->
+      <div id="details8" class="bodydetails" style="background-color: hotpink">
+        <!--订单号 订单时间 课程名 价格 交易状态-->
+          <div class="courseInfo">
+              <ul>
+                  <li class="info1 info2">订单号</li>
+                  <li class="info2">订单时间</li>
+                  <li class="info2">价格</li>
+                  <li class="info3">交易状态</li>
+              </ul>
+          </div>
+      </div><!--查看订单  孙瑞-->
+  </div>
+  <div class="footer"></div>
+</body>
+</html>
